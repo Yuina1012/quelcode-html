@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+html{
+  font-size: 100%;
+}
+
+body{
+  font-family:'Noto Sans JP' sans-serif ;
+  background-color: #fff;
+}
+
+/* HEADER-//////////// */
+
+.logo{
+  margin-left: 6%;
+  width: 80px;
+  margin-top: 14px;
+}
+.top-nav{
+  position: relative;
+  display: flex;
+  list-style: none;
+  list-style: none;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-left: 300px;
+  white-space: nowrap;
+  
+}
+.top-nav li{
+ margin-top: 0;
+  margin-left: 12px;
+}
+.top-nav a{
+  text-decoration: none;
+  color: #333333;
+
+}
+
+.top-nav a:hover{
+  color: rgb(54, 54, 204);
+}
+
+  .main-nav{
+    display: flex;
+  font-size: 2.25rem;
+  margin-top: 0;
+  list-style: none;
+  color: #ddd;
+  margin-left: 100px;
+}
+.main-nav li{
+  margin-left: 36px;
+  color: #ddd;
+}
+
+
+.my-small{
+  font-size: 1.6rem;
+}
+.my-gray {
+  color: rgb(104, 99, 99)
+}
+.my-gray:hover{
+  color: rgb(197, 188, 188);
+}
+
+.top-wrapper p{
+  font-size: 0.8rem;
+  color: rgb(197, 188, 188);
+}
+
+.page-header{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  /* position: fixed; */
+}
+
+
+
+/* SNS CONTENTS-SHARE-------------------------------------------*/
+
+.sns-content p{
+  color: rgb(105, 100, 100);
+  font-weight: bold;
+}
+
+.my-blue{
+  color: #3C5A99;
+}
+.my-skyblue{
+  color: #1DA1F2;
+}
+
+.my-greenblue{
+  background-color: #21759B;
+  color: #fff;
+}
+
+.my-big{
+  font-size: 2rem;
+}
+/* ボタン */
+.pdf-btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  font-family: sans-serif;
+  text-align: center;
+  color: #FFF;
+  background: #3C5A99;
+  transition: .4s;
+}
+
+.pdf-btn:hover {
+  background: #1ec7bb;
+}
+
+/* メイン☆ */
+
+/* .title-suquare{
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding: 0 0 0 32px;
+  position: relative;
+} */
+
+/* NRIの強みボタン */
+.strong-box-button{
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  font-family: sans-serif;
+  text-align: center;
+  color: #3C5A99;
+  background:rgb(255,255,255);
+  transition: .4s;
+  border: 1px rgb(153, 150, 150) solid ;
+  
+}
+
+
+/* フッターーーーーーーーーーーー */
+
+footer{
+  background: #FFF;
+  text-align: center;
+  padding: 26px 100px;
+}
+
+.footer-nav{
+  display: flex;
+  white-space: nowrap;
+}
+footer li{
+  border-left: 1px solid rgb(197, 188, 188);
+  padding: 20px;
+  
+}
+
+.footer-nav a{
+  text-decoration: none;
+  color: rgb(197, 188, 188);
+}
+/* .btn-sns{
+  display: inline-block;
+  text-decoration: none;
+  width: 50px;
+  margin: 2px;
+  height: 50px;
+  font-size: 23px;
+  color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.btn-sns i[ */
+]
