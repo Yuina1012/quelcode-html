@@ -150,7 +150,7 @@ body{
 
 .top-wrapper img{
   margin: 0;
-  width: 100%;
+  width: 120%;
   margin-top: 26px;
 }
 
@@ -290,21 +290,26 @@ color: #ddd;
   padding: 20px;
 
 }
+
+div {
+  display: block;
+}
+
 .nri-strong-box p{
   font-weight: bold;
-  padding-top: 20px; 
+  margin-top: -2px; 
   padding-left :20px;
   margin-bottom: 0em;
   color: rgb(51, 51,51);
   font-size: 1rem;
   display: block;
   height:24px ;
-  width: 76px;
+  width: 80px;
 }
 
 /* NRIの強みボタン */
 .strong-box-button{
-  position: relative;
+  position: absolute;
   display: inline-block;
   padding: 0.5em 0.5em;
   text-decoration: none;
