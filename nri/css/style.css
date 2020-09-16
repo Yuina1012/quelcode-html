@@ -7,55 +7,88 @@ html{
 body{
   font-family:'Noto Sans JP' sans-serif ;
   background-color: #fff;
+  width: 1920px;
+  margin-top: 0;
+  margin-left: -15px;
+  z-index: 5;
+
 }
 
-/* HEADER-//////////// */
+/* MAIN-//////////// */
 
-.page-header img{
-  margin-left: 6%;
-  width: 80px;
-  margin-top: 14px;
-}
-.top-nav{
-  position: relative;
+.page-top{
   display: flex;
-  list-style: none;
+  height: 60px;
+  width: 1920px; ;
+  position: fixed;
+  background-color: #FFF;
+  margin-top:-16px;
+  z-index: 40;
+}
+.page-top nav{
+  margin-top: -10px;
+  height: 56px;
+  align-items: flex-start;
+}
+
+
+.logo img{
+  margin-top: 15px;
+  object-fit: cover;
+  margin-left: 196px;
+  height: 56px;
+  width:56px px;
+}
+
+.top-nav{
+  align-items: flex-start;
   list-style: none;
   font-size: 0.875rem;
   font-weight: bold;
-  margin-top: 16px;
-  margin-left: 300px;
   white-space: nowrap;
-  
+  cursor: pointer;
+  margin-left: 500px;
+  margin-top: -30px;
+  padding-top: 0;
+  justify-content: center;
+  display: inline-block; 
 }
-.top-nav li{
- margin-top: 0;
+.top-nav li{  
   margin-left: 12px;
+   display: inline;
 }
+
 .top-nav a{
   text-decoration: none;
   color: #333333;
-
+  margin-top: 0px;
 }
 
 .top-nav a:hover{
-  color: rgb(54, 54, 204);
+  color: royalblue;
 }
 
-  .main-nav{
-    display: flex;
+.main-nav{
   font-size: 2.25rem;
-  margin-top: 0;
   list-style: none;
   color: #ddd;
-  margin-left: 100px;
+  padding-top: 0;
+  margin-top: -12px;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 20px;
+  flex-direction: row;
+  display: inline-block;
+}
+
+.main-nav ul{
+  margin-top: 0em;
 }
 .main-nav li{
+  display: inline;
   margin-left: 36px;
   color: #ddd;
 }
-
-
 .my-small{
   font-size: 1.6rem;
 }
@@ -65,27 +98,99 @@ body{
 .my-gray:hover{
   color: rgb(197, 188, 188);
 }
+.top-wrapper{
+  position: relative;
+  z-index: 30;
+}
 
-.top-wrapper p{
-  font-size: 0.8rem;
+/* ぱんくずリスト */
+.breadcrumb{
+  height: 16px;
+  background-color: #FFF;
+  padding-top: 58px;
+}
+
+.breadcrumb ul{
+  list-style-type:none ;
+  padding-left: 325px;
+  height: 16px;
+  margin: 0;
+  padding-bottom: 3px;
+
+  
+}
+
+.breadcrumb a{  
+  font-size: 0.7rem;
   color: rgb(197, 188, 188);
+  text-decoration: none;
+}
+
+.breadcrumb li{
+  display: inline;
+  color: rgb(197, 188, 188);
+  font-size: 0.7rem;
+}
+.breadcrumb li::after{
+  content: '>';
+  color: #463f3f;
+}
+
+.breadcrumb li:last-child::after{
+  content: none;
+
 }
 
 .page-header{
   display: flex;
   justify-content: space-around;
   max-width: 1200px;
-  /* position: fixed; */
+  /* /* position: fixed; / */
 }
 
+.top-wrapper img{
+  margin: 0;
+  width: 100%;
+  margin-top: 26px;
+}
 
 
 /* SNS CONTENTS-SHARE-------------------------------------------*/
-
+.sns-content{
+  float: right;
+  width: 800px;
+  height:34px ;
+  margin-right: 280px;
+  margin-top: -40px;
+}
 .sns-content p{
+  
   color: rgb(105, 100, 100);
   font-weight: bold;
+  font-size: 0.68rem;
 }
+
+.sns-share{
+  text-decoration: none;
+  margin-top: -12px;
+  width: 800px;
+  height: 34px;
+  margin-left: 1238px;
+  margin-right: 0;
+}
+.sns-share li{
+  display: inline;
+  margin: 10px;
+}
+.sns-share li:first-child{
+  color: rgb(105, 100, 100);
+  font-weight: 700;
+  font-size: 0.78rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
 
 .my-blue{
   color: #3C5A99;
@@ -100,22 +205,390 @@ body{
 }
 
 .my-big{
-  font-size: 2rem;
+  font-size: 1.78rem;
+  cursor: pointer;
 }
-/* ボタン */
+
+/* メイン記事部部分 */
+main{
+  width: 1000px;
+  margin-top: -16px;
+}
+.main-contents{
+  width: 800px;
+  max-width: 1000px;
+  margin: 0 560px;
+  height: 1100px;
+  margin-bottom: 0;
+}
+.main-contents h2{
+  margin-top: 100px;
+  font-size: 1.37rem;
+  
+}
+.title-square img{
+  position: relative;
+  margin-top: 4px;
+  vertical-align: bottom;
+}
+  
+.main-contents p{
+  margin: 16px auto;
+  line-height: 2;
+}
+
+
+/* デジタルが拓く近未来PDFボタン */
+
 .pdf-btn {
   position: relative;
   display: inline-block;
-  padding: 0.5em 0.5em;
+  padding: 15px 20px;
   text-decoration: none;
   font-family: sans-serif;
   text-align: center;
   color: #FFF;
   background: #3C5A99;
   transition: .4s;
+  cursor: pointer;
+  margin: 40px 10px 200px 252px;
+  font-family: icomoon;
 }
 
 .pdf-btn:hover {
-  background: #1ec7bb;
+  background: #3C5A99;
+  opacity: .5;
 }
+
+/* FLEXーCONTENT＝LINKS */
+
+.flex-content{
+  display: flex;
+  justify-content: space-between;
+  width: 790px;
+  margin-left: 580px;
+}
+.flex-content a{
+text-decoration: none;
+}
+.flex-content a:hover{
+  text-decoration: underline;
+}
+
+.fa fa-chevron-lef{
+color: #ddd;
+}
+
+/* NRI強みBOX */
+.nri-strong-box{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(219, 236,249);
+  width: 760px;
+  height: 201px;
+  margin: 0 580px;
+  padding: 20px;
+
+}
+.nri-strong-box p{
+  font-weight: bold;
+  padding-top: 20px; 
+  padding-left :20px;
+  margin-bottom: 0em;
+  color: rgb(51, 51,51);
+  font-size: 1rem;
+  display: block;
+  height:24px ;
+  width: 76px;
+}
+
+/* NRIの強みボタン */
+.strong-box-button{
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  font-family: sans-serif;
+  text-align: center;
+  color: #3C5A99;
+  background:rgb(255,255,255);
+  transition: .4s;
+  border: 1px rgb(153, 150, 150) solid ;
+  padding: 20px;
+  margin: 10px  20px;
+  justify-content: space-around;
+  width: 239px;
+  
+}
+.strong-point-links{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.strong-point-links li{
+  
+  list-style: none;
+}
+
+.strong-point-links a{
+  text-decoration: none;
+  position: relative;
+  text-indent: 0em;
+  overflow: hidden;
+}
+
+/* 企業情報 */
+.info{
+  width: 1000px;
+  margin-right: 460px;
+  margin-left:460px ;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.info ul{
+  list-style: none;
+  height: 153px; 
+  width: 1020px;
+}
+  .info a{
+  text-decoration: none;
+   color: royalblue;
+  }
+.info h2{
+  padding-top:18px;
+  padding-bottom: 37px;
+}
+
+.info ul{
+  padding:30px 0;
+  width: 1020px;
+  height: 153px;
+}
+.strategy-links {
+  width:1020px;
+  height:153px;
+  padding: 30px  0;
+}
+
+.strategy-links ul{
+  width: 1020px;
+  height: 213px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.strategy-links li{
+  width: 235px;
+  height: 41px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.company-links  {
+  width: 1020px;
+  height: 112px;
+  padding: 30px  0;
+}
+.company-links ul{
+  width: 1020px;
+  height: 213px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.company-links li{
+  width: 235px;
+  height: 41px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.good-point {
+  width: 1020px;
+  height: 112px;
+  padding: 30px  0;
+}
+    
+.good-point ul{
+  width: 1020px;
+  height: 213px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+.good-point li{
+    width: 235px;
+    height: 41px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .office-location {
+    width: 1020px;
+    height: 70px;
+    padding: 30px  0;
+  }
+.office-location ul{
+  width: 1020px;
+  height: 213px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;  
+  margin:0;
+}
+
+.office-location li{
+  width: 235px;
+  height: 41px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.work-about ul{
+  width: 1020px;
+  height: 70px;
+  padding: 30px  0;
+}
+
+.work-about ul{
+  width: 1020px;
+  height: 213px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;  
+  align-items: center;
+}
+.work-about  li{
+  width: 235px;
+  height: 41px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* 企業案内ボーダー */
+.bold-border{
+  border: 0.5px rgb(51, 51, 51) solid;
+
+}
+.dot-border{
+  border: 0.4px rgb(153,153,153) dotted;
+}
+
+  /* SNSーFOLLOW＝US */
+  .sns-follow{
+  width: 1920px;
+   height: 60px;
+   flex-direction: column;
+   text-align: justify;
+   padding: 30px 0 30px 0;
+}
+  
+  .sns-follow h2{
+    color: black;
+   font-size: 20px;
+   margin-right: 20px;
+}
+  .sns-follow a{
+  margin-right: 20px;
+   text-align: center;
+  display: inline;
+}
+
+  .border-gray{
+  border:2px  rgb(134,134, 134) solid;
+  }
+            
+
+
+  /* LINKSーWRAPPER */
+ .links-wrapper {
+  width: 1154px;
+  height: 725px;
+  display: grid;
+  grid-template-columns: repeat(4,  1fr);
+  margin-top: 40px;
+  margin-left: 317px;
+  gap:100px;
+  }
+.links-wrapper ul{
+  list-style: none;
+  font-weight: lighter; 
+  margin-top:80px ;
+    
+}
+.links-wrapper li{
+  font-weight: 50;
+  margin-bottom:5px;
+}
+
+.links-wrapper a{
+  text-decoration: none;
+  color: black; 
+}
+.info a:hover{
+  text-decoration: underline;
+}
+
+/* フッターーーーーーーーーーーー */
+
+footer{
+  background: #FFF;
+  text-align: center;
+  padding: 26px 100px;
+  width: 1720px;
+  height: 93px;
+  margin-bottom: 0;
+}
+
+
+.footer-nav{
+  white-space: nowrap;
+  list-style-type:  none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+footer li{
+  border-left: 1px solid rgb(197, 188, 188);
+  padding: 0;
+  font-size: 0.875rem;
+  
+}
+
+.footer-nav a{
+  text-decoration: none;
+  color: rgb(197, 188, 188);
+}
+
+.footer-nav a:hover{
+  text-decoration: underline;
+}
+
+
 
