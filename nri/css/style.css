@@ -309,8 +309,8 @@ div {
 
 /* NRIの強みボタン */
 .strong-box-button{
-  position: absolute;
-  display: inline-block;
+  display: flex;
+  flex-wrap:  wrap;
   padding: 0.5em 0.5em;
   text-decoration: none;
   font-family: sans-serif;
@@ -331,19 +331,31 @@ div {
   align-content: space-between;
   justify-content: space-around;
   align-items: center;
+  margin: 0;
+  padding: 0;
+
 
 }
 
 .strong-point-links li{
-  
+  width: 240px;
+  height: 70px;
   list-style: none;
+  
 }
 
 .strong-point-links a{
-  text-decoration: none;
-  position: relative;
-  text-indent: 0em;
+  font-weight:lighter;
+  position: absolute;
+  text-indent: -1px;
   overflow: hidden;
+  width: 200px;
+  height: 40px;
+  white-space: nowrap;
+  padding: 15px 20px 15px 20px;
+  margin-left: -1px;
+  margin-top: 0;
+  
 }
 
 /* 企業情報 */
