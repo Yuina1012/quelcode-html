@@ -213,6 +213,7 @@ body{
 main{
   width: 1000px;
   margin-top: -16px;
+  height: 4000px;
 }
 .main-contents{
   width: 800px;
@@ -288,6 +289,7 @@ color: #ddd;
   height: 201px;
   margin: 0 580px;
   padding: 20px;
+  margin-bottom: 200px;
 
 }
 
@@ -333,29 +335,25 @@ div {
   align-items: center;
   margin: 0;
   padding: 0;
-
-
 }
 
 .strong-point-links li{
   width: 240px;
   height: 70px;
-  list-style: none;
-  
+  list-style: none;  
 }
 
 .strong-point-links a{
   font-weight:lighter;
-  position: absolute;
+  position: relative;
   text-indent: -1px;
   overflow: hidden;
-  width: 200px;
-  height: 40px;
+  width: 180px;
+  height: 35px;
   white-space: nowrap;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 20px 12px 20px;
   margin-left: -1px;
-  margin-top: 0;
-  
+  margin-top: 5px; 
 }
 
 /* 企業情報 */
@@ -376,10 +374,13 @@ div {
   .info a{
   text-decoration: none;
    color: royalblue;
-  }
+  }    
+  
 .info h2{
   padding-top:18px;
-  padding-bottom: 37px;
+  font-size:20px;
+  padding-bottom: 0;
+  margin-bottom: -14px;
 }
 
 .info ul{
@@ -391,24 +392,31 @@ div {
   width:1020px;
   height:153px;
   padding: 30px  0;
+  display: block;
 }
 
 .strategy-links ul{
   width: 1020px;
-  height: 213px;
+  height: 140px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-between;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 .strategy-links li{
   width: 235px;
   height: 41px;
   padding-left: 10px;
   padding-right: 10px;
+}
+.strategy-links a{
+  font-size: 14px;
+  color: #3C5A99;
 }
 
 .company-links  {
@@ -418,14 +426,14 @@ div {
 }
 .company-links ul{
   width: 1020px;
-  height: 213px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-between;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  
+  padding: 0;
 }
 .company-links li{
   width: 235px;
@@ -433,45 +441,55 @@ div {
   padding-left: 10px;
   padding-right: 10px;
 }
+ .company-links a{
+  font-size: 14px;
+  color: #3C5A99;
+}
+
 .good-point {
   width: 1020px;
   height: 112px;
   padding: 30px  0;
 }
-    
 .good-point ul{
   width: 1020px;
-  height: 213px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-between;
-  justify-content: space-around;
-  align-items: center;  
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
-
 .good-point li{
     width: 235px;
     height: 41px;
     padding-left: 10px;
     padding-right: 10px;
   }
+  .good-point a{
+    font-size: 14px;
+    color: #3C5A99;
+  }
 
   .office-location {
     width: 1020px;
-    height: 70px;
+    height: 100px;
     padding: 30px  0;
   }
-.office-location ul{
-  width: 1020px;
-  height: 213px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-around;
-  align-items: center;  
-  margin:0;
+  .office-location ul{
+    width: 1020px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  margin: 0;
 }
 
 .office-location li{
@@ -480,26 +498,28 @@ div {
   padding-left: 10px;
   padding-right: 10px;
 }
-.work-about ul{
+.office-location a{
+  font-size: 14px;
+  color: #3C5A99;
+}
+
+.work-about {
   width: 1020px;
-  height: 70px;
+  height: 100px;
   padding: 30px  0;
 }
 
 .work-about ul{
   width: 1020px;
-  height: 213px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-between;
-  justify-content: space-around;display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-around;
-  align-items: center;  
+  justify-content: flex-start;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 .work-about  li{
   width: 235px;
@@ -507,13 +527,26 @@ div {
   padding-left: 10px;
   padding-right: 10px;
 }
+.work-about a{
+  font-size: 14px;
+  color: #3C5A99;
+}
 /* 企業案内ボーダー */
-.bold-border{
-  border: 0.5px rgb(51, 51, 51) solid;
+hr {
+  display: block;
+  height: 1px;
+  border-radius:0;
+  border-top: 2px rgb(32, 32, 32) solid;
+  margin: 1em 0;
+	padding: 0;
+	background-color: rgb(255,255,255);
+
+
 
 }
 .dot-border{
   border: 0.4px rgb(153,153,153) dotted;
+  margin: 40px 0;
 }
 
   /* SNSーFOLLOW＝US */
@@ -523,12 +556,14 @@ div {
    flex-direction: column;
    text-align: justify;
    padding: 30px 0 30px 0;
-}
+  }
   
   .sns-follow h2{
     color: black;
-   font-size: 20px;
-   margin-right: 20px;
+    font-size: 20px;
+    margin-right: 20px;
+    padding-left: 800px ;
+    display: inline;
 }
   .sns-follow a{
   margin-right: 20px;
@@ -537,38 +572,41 @@ div {
 }
 
   .border-gray{
-  border:2px  rgb(134,134, 134) solid;
-  }
-            
+  border-top-color: rgb(133,133,133);
+}
 
 
-  /* LINKSーWRAPPER */
- .links-wrapper {
+
+/* LINKSーWRAPPER */
+.links-wrapper {
   width: 1154px;
-  height: 725px;
+  height: 500px;
   display: grid;
   grid-template-columns: repeat(4,  1fr);
   margin-top: 40px;
   margin-left: 317px;
   gap:100px;
-  }
+}
 .links-wrapper ul{
   list-style: none;
   font-weight: lighter; 
-  margin-top:80px ;
-    
+  margin-top:20px ; 
 }
 .links-wrapper li{
-  font-weight: 50;
-  margin-bottom:5px;
+  margin-bottom:30px;
 }
-
 .links-wrapper a{
   text-decoration: none;
   color: black; 
+  font-size: 14px;
+  font-weight: lighter;
 }
 .info a:hover{
   text-decoration: underline;
+}
+hr .border-main-last{
+border-top-color: rgb(133,133,133);
+display: inline-grid;
 }
 
 /* フッターーーーーーーーーーーー */
@@ -579,6 +617,7 @@ footer{
   padding: 26px 100px;
   width: 1720px;
   height: 93px;
+  margin-top: 50px;
   margin-bottom: 0;
 }
 
@@ -589,6 +628,7 @@ footer{
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 footer li{
