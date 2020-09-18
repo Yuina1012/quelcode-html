@@ -604,13 +604,13 @@ hr {
 .info a:hover{
   text-decoration: underline;
 }
-hr .border-main-last{
-border-top-color: rgb(133,133,133);
-display: inline-grid;
-}
-
 /* フッターーーーーーーーーーーー */
-
+ .border-main-last{
+border: 1px rgb(133, 133, 133) solid;
+width: 2300px;
+margin-left: 0;
+margin-right: 0;
+}
 footer{
   background: #FFF;
   text-align: center;
@@ -620,7 +620,10 @@ footer{
   margin-top: 50px;
   margin-bottom: 0;
 }
-
+.wrapper{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
 
 .footer-nav{
   white-space: nowrap;
@@ -628,23 +631,32 @@ footer{
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-top: 40px;
   margin-bottom: 0;
 }
 
 footer li{
   border-left: 1px solid rgb(197, 188, 188);
-  padding: 0;
+  padding: 0 10px 0 10px;
   font-size: 0.875rem;
-  
 }
 
 .footer-nav a{
   text-decoration: none;
   color: rgb(197, 188, 188);
+  font-size: 13px;
+  padding: 0 5px 0 5px;
 }
 
 .footer-nav a:hover{
   text-decoration: underline;
+}
+
+footer p{
+  display: block;
+  width: 350px;
+  margin-left: 350px;
+  font-size: 8px;
 }
 
 
