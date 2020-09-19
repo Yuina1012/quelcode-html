@@ -122,16 +122,13 @@ body{
 .breadcrumb li:last-child::after{
   content: none;
 }
-.page-header{
-  display: flex;
-  justify-content: space-around;
-  max-width: 1200px;
   /* /* position: fixed; / */
-}
 
 .top-wrapper img{
   margin: 0;
   width: 1920px;
+  height: 250px;
+
   margin-top: 26px;
 }
 /* SNS CONTENTS-SHARE-------------------------------------------*/
@@ -140,7 +137,7 @@ body{
   width: 800px;
   height:34px ;
   margin-right: 280px;
-  margin-top: -40px;
+  /* margin-top: -40px; */
 }
 .sns-content p{
   color: rgb(105, 100, 100);
