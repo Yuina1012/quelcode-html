@@ -236,6 +236,7 @@ main{
   justify-content: space-between;
   width: 790px;
   margin-left: 580px;
+  margin-bottom: 60px;
 }
 .flex-content a{
 text-decoration: none;
