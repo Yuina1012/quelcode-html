@@ -260,6 +260,11 @@ color: #ddd;
 }
 div {
   display: block;
+}                          
+.nri-strong-box  span{
+font-size: 5px;
+margin-left: 0;
+margin-right: 4px;
 }
 .nri-strong-box p{
   font-weight: bold;
@@ -311,12 +316,10 @@ div {
   overflow: hidden;
   width: 180px;
   height: 35px;
-  white-space: nowrap;
   padding: 15px 20px 12px 20px;
   margin-left: -1px;
   margin-top: 5px; 
 }
-
 /* 企業情報 */
 .info{
   width: 1000px;
@@ -335,6 +338,7 @@ div {
  .info a{
   text-decoration: none;
  color: royalblue;
+ 
   }    
 .info h2{
   padding-top:18px;
@@ -352,6 +356,11 @@ div {
   height:153px;
   padding: 30px  0;
   display: block;
+}
+.strategy-links span{
+  margin-right: 10px;
+  color: #ddd;
+  font-size: 4px;
 }
 .strategy-links ul{
   width: 1020px;
@@ -381,6 +390,11 @@ div {
   height: 112px;
   padding: 30px  0;
 }
+.company-links span{
+  margin-right: 10px;
+  color: #ddd;
+  font-size: 4px;
+}
 .company-links ul{
   width: 1020px;
   height: 100px;
@@ -398,7 +412,7 @@ div {
   padding-left: 10px;
   padding-right: 10px;
 }
- .company-links a{
+.company-links a{
   font-size: 14px;
   color: #3C5A99;
 }
@@ -406,6 +420,11 @@ div {
   width: 1020px;
   height: 112px;
   padding: 30px  0;
+}
+.good-point span{
+  margin-right: 10px;
+  color: #ddd;
+  font-size: 4px;
 }
 .good-point ul{
   width: 1020px;
@@ -434,6 +453,11 @@ div {
   height: 100px;
   padding: 30px  0;
 }
+.office-location span{
+  margin-right: 10px;
+  color: #ddd;
+  font-size: 4px;
+}
 .office-location ul{
   width: 1020px;
   height: 200px;
@@ -460,6 +484,11 @@ margin: 0;
   width: 1020px;
   height: 100px;
   padding: 30px  0;
+}
+.work-about span{
+  margin-right: 10px;
+  color: #ddd;
+  font-size: 1px;
 }
 .work-about ul{
   width: 1020px;
@@ -491,11 +520,15 @@ hr {
   border-top: 2px rgb(32, 32, 32) solid;
   margin: 1em 0;
 	padding: 0;
-	background-color: rgb(255,255,255);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 .dot-border{
-  border: 0.4px rgb(153,153,153) dotted;
-  margin: 40px 0;
+  border-top: 1px rgb(153,153,153) dotted;  
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 
   /* SNSーFOLLOW＝US */
@@ -532,6 +565,11 @@ width: 1920px;
   margin-left: 317px;
   gap:100px;
 }
+.links-wrapper span{
+  margin-right: 10px;
+  color: #ddd;
+  font-size: 1px;
+}
 .links-wrapper ul{
   list-style: none;
   font-weight: lighter; 
@@ -545,6 +583,7 @@ width: 1920px;
   color: black; 
   font-size: 14px;
   font-weight: lighter;
+  white-space: nowrap;
 }
 .info a:hover{
   text-decoration: underline;
