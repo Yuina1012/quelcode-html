@@ -29,7 +29,7 @@ body{
 .logo img{
   margin-top: 15px;
   object-fit: cover;
-  margin-left: 196px;
+  margin-left: 180px;
   height: 56px;
   width:56px px;
 }
@@ -130,7 +130,7 @@ body{
 
 .top-wrapper img{
   margin: 0;
-  width: 120%;
+  width: 1920px;
   margin-top: 26px;
 }
 /* SNS CONTENTS-SHARE-------------------------------------------*/
